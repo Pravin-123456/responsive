@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Movie Navigation Bar</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="logo">
+                <li><img src="logo2.png" alt="Logo"></li>
+                <li><h1>P<span>mm</span>k</h1></li>
+            </ul>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Movie</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <form>
+                <button id="button"><a href="long_in.html">Sign <span>In</span></a></button>
+                <div class="menu">
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                </div>
+            </form>
+
+        </nav>
+    </header>
+        <script src="script.js"></script>
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.508/build/spline-viewer.js"></script>
+         <spline-viewer url="undefined"></spline-viewer>
+    </main>
+    <script>
+        function menu() {
+            var navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('show'); 
+        }
+    </script>
+</body>
+</html>
